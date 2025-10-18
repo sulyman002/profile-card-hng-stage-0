@@ -1,0 +1,155 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url('./assets//mp-profile-pic-linkedin.jpg') 
+    no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(18px);
+  padding: 1rem;
+}
+
+.profile-card {
+  background: rgba(5, 0, 0, 0.589);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  color: #f1f5f9;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+
+.profile-info h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.bio {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+.time {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: #bfc2c7;
+}
+
+
+section {
+  margin-top: 1.2rem;
+  text-align: left;
+}
+
+section h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #f8fafc;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+  list-style: none;
+}
+
+.social-links a {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.social-links a:hover {
+  background: rgba(5, 0, 0, 0.589);
+  transform: scale(1.1);
+  font-size: 0.7rem;
+}
+
+
+@media (min-width: 768px) {
+  .profile-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+    max-width: 750px;
+  }
+
+  .avatar-wrapper {
+    flex: 1;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .profile-info {
+    flex: 2;
+  }
+
+  .bio {
+    text-align: left;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+  }
+}

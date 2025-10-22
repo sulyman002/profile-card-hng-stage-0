@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pulsepoint | Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="nav-container">
+        <nav class="nav-bar">
+        <p>Oyedele Sulaiman</p>
+        <ul class="menu">
+          <li><a href="index.html">Profile</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      </div>
+
+      <section class="contact-section">
+        <h2 id="contact-title">Contact Us</h2>
+
+        <form class="contact-card" id="contactForm" novalidate>
+          <div>
+            <label for="name">Full Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              data-testid="test-contact-name"
+              aria-describedby="test-contact-error-name"
+              required
+            />
+            <small
+              id="test-contact-error-name"
+              class="error"
+              aria-live="polite"
+            ></small>
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              data-testid="test-contact-email"
+              aria-describedby="test-contact-error-email"
+              required
+            />
+            <small
+              id="test-contact-error-email"
+              class="error"
+              aria-live="polite"
+            ></small>
+          </div>
+
+          <div>
+            <label for="subject">Subject:</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              data-testid="test-contact-subject"
+              aria-describedby="test-contact-error-subject"
+              required
+            />
+            <small
+              id="test-contact-error-subject"
+              class="error"
+              aria-live="polite"
+            ></small>
+          </div>
+
+          <div>
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              data-testid="test-contact-message"
+              aria-describedby="test-contact-error-message"
+              required
+            ></textarea>
+            <small
+              id="test-contact-error-message"
+              class="error"
+              aria-live="polite"
+            ></small>
+          </div>
+
+          <button
+            type="submit"
+            data-testid="test-contact-submit"
+            aria-label="Submit form"
+          >
+            Submit
+          </button>
+
+          <p
+            id="test-contact-success"
+            class="success-message"
+            aria-live="assertive"
+            hidden
+          >
+            ✅ Message sent successfully!
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

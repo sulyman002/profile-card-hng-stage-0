@@ -4,12 +4,46 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
+.nav-container {
+  z-index: 90;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #3d3a2a;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
-.single-card {
-  
 
+.nav-bar {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.menu li {
+ 
+  padding: 10px;
+  border-radius: 10px;
+  background-color: gray;
+}
+.menu a {
+   color: white;
+  text-decoration: none;
+}
+main {
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -18,7 +52,7 @@ body {
   padding: 1rem;
 }
 
-.single-card::before {
+main::before {
   content: "";
   position: absolute;
   top: 0;
@@ -28,7 +62,7 @@ body {
   background: url("./assets//mp-profile-pic-linkedin.jpg") no-repeat center
     center/cover;
   filter: blur(12px);
-  transform: scale(1.1);
+  transcontact-card: scale(1.1);
   z-index: -1;
 }
 
@@ -43,11 +77,11 @@ body {
   max-width: 420px;
   color: #f1f5f9;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transcontact-card 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-card:hover {
-  transform: translateY(-5px);
+  transcontact-card: translateY(-5px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 
@@ -128,7 +162,7 @@ ul {
 
 .social-links a:hover {
   background: rgba(5, 0, 0, 0.589);
-  transform: scale(1.1);
+  transcontact-card: scale(1.1);
   font-size: 0.7rem;
 }
 
@@ -166,40 +200,74 @@ ul {
 }
 /* Contact styling */
 .contact-section {
-  
-
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(18px);
-  padding: 1rem;
+  background: transparent;
 }
 
-
-.contact-card {
-  background: rgba(5, 0, 0, 0.589);
+.contact-section {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
   border-radius: 20px;
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  padding: 2rem;
-  width: 100%;
-  max-width: 420px;
-  color: #f1f5f9;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: left;
 }
 
-.contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+#contact-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #0a0a23;
+}
+.contact-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-card div label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.contact-card div input,
+.contact-card div textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.contact-card div input:focus,
+.contact-card div textarea:focus {
+  border-color: #0a0a23;
+}
+
+.contact-card div small {
+  color: rgb(236, 16, 16);
+}
+
+.contact-card button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background: #0a0a23;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-card button:hover {
+  background: #111155;
 }
 
 /* About me styling */
 .about-section {
-  
-
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -207,7 +275,6 @@ ul {
   backdrop-filter: blur(18px);
   padding: 1rem;
 }
-
 
 .about-card {
   background: rgba(5, 0, 0, 0.589);
@@ -220,10 +287,10 @@ ul {
   max-width: 420px;
   color: #f1f5f9;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transcontact-card 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-card:hover {
-  transform: translateY(-5px);
+  transcontact-card: translateY(-5px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }

@@ -26,16 +26,22 @@
   align-items: center;
   justify-content: space-between;
 }
+.nav-bar p {
+  color: white;
+  font-size: 20px;
+}
 .menu {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1rem;
 }
 .menu li {
- 
-  padding: 10px;
-  border-radius: 10px;
-  background-color: gray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 16px;
+  background-color: #5f5b45;
 }
 .menu a {
    color: white;
@@ -217,7 +223,7 @@ ul {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.4rem;
-  color: #0a0a23;
+  color: black;
 }
 .contact-card div {
   display: flex;
@@ -229,6 +235,7 @@ ul {
   display: block;
   margin-top: 10px;
   font-weight: 500;
+  color: black;
 }
 .contact-card div input,
 .contact-card div textarea {
@@ -254,7 +261,7 @@ ul {
   width: 100%;
   margin-top: 20px;
   padding: 10px;
-  background: #0a0a23;
+  background: #3d3a2a;
   color: white;
   border: none;
   border-radius: 8px;
@@ -263,7 +270,7 @@ ul {
 }
 
 .contact-card button:hover {
-  background: #111155;
+  background: #4c4939;
 }
 
 /* About me styling */

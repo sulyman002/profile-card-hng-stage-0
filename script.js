@@ -13,7 +13,7 @@ const successMessage = document.getElementById("test-contact-success");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // Clear old errors
+ 
   document.querySelectorAll(".error").forEach((el) => (el.textContent = ""));
   successMessage.hidden = true;
 
@@ -25,33 +25,33 @@ form.addEventListener("submit", (e) => {
 
   let valid = true;
 
-  // Name validation
+
   if (name === "") {
     document.getElementById("test-contact-error-name").textContent =
       "Full name is required.";
     valid = false;
   }
 
-  // Email validation
-  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/i;
+ 
+  const emailRegex = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/i;
   if (email === "") {
     document.getElementById("test-contact-error-email").textContent =
       "Email is required.";
     valid = false;
-  } else if (!emailPattern.test(email)) {
+  } else if (!emailRegex.test(email)) {
     document.getElementById("test-contact-error-email").textContent =
       "Please enter a valid email address.";
     valid = false;
   }
 
-  // Subject validation
+
   if (subject === "") {
     document.getElementById("test-contact-error-subject").textContent =
       "Subject is required.";
     valid = false;
   }
 
-  // Message validation
+
   if (message === "") {
     document.getElementById("test-contact-error-message").textContent =
       "Message is required.";
@@ -62,7 +62,7 @@ form.addEventListener("submit", (e) => {
     valid = false;
   }
 
-  // If valid, show success
+  
   if (valid) {
     successMessage.focus();
     form.reset();

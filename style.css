@@ -211,8 +211,9 @@ ul {
 
 .contact-section {
   width: 450px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
+  background: rgba(5, 0, 0, 0.589);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 30px;
